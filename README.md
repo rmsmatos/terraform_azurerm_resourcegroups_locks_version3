@@ -65,7 +65,7 @@ terraform {
 }
 
 module "terraform_azurerm_resourcegroups_lock_version3" {
-  source               = "github.com/rmsmatos/terraform_azurerm_resourcegroup_version3"
+  source               = "github.com/rmsmatos/terraform_azurerm_resourcegroups_locks_version3"
   name                 = "just-a-test"
   location             = "westeurope"
   environmentShortname = "dev"
