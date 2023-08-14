@@ -2,8 +2,8 @@ terraform {
   required_version = ">= 1.5"
 }
 
-module "terraform_azurerm_resourcegroups_lock_version2" {
-  source               = "github.com/rmsmatos/terraform_azurerm_resourcegroups_lock_version2"
+module "terraform_azurerm_resourcegroups_lock_version3" {
+  source               = "github.com/rmsmatos/terraform_azurerm_resourcegroup_version3"
   name                 = "just-a-test"
   location             = "westeurope"
   environmentShortname = "dev"
@@ -18,37 +18,37 @@ module "terraform_azurerm_resourcegroups_lock_version2" {
 }
 
 output "id" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.location
+  value = module.terraform_azurerm_resourcegroups_lock_version3.location
 }
 
 output "name" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.name
+  value = module.terraform_azurerm_resourcegroups_lock_version3.name
 }
 
 output "tags" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.tags
+  value = module.terraform_azurerm_resourcegroups_lock_version3.tags
 }
 
 output "managed_by" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.managed_by
+  value = module.terraform_azurerm_resourcegroups_lock_version3.managed_by
 }
 
 output "lock_id" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.lock_id
+  value = module.terraform_azurerm_resourcegroups_lock_version3.lock_id
 }
 
 output "lock_name" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.lock_name
+  value = module.terraform_azurerm_resourcegroups_lock_version3.lock_name
 }
 
 output "lock_scope" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.lock_scope
+  value = module.terraform_azurerm_resourcegroups_lock_version3.lock_scope
 }
 
 output "lock_level" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.lock_level
+  value = module.terraform_azurerm_resourcegroups_lock_version3.lock_level
 }
 
 output "lock_notes" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.lock_notes
+  value = module.terraform_azurerm_resourcegroups_lock_version3.lock_notes
 }
